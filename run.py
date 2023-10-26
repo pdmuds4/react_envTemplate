@@ -13,8 +13,8 @@ app.add_middleware(
 
 @app.get("/")
 async def index():
-    return {"message": 'Hello World!' }
+    return {"message": 'Hello World!'}
 
 
-if __name__=="__main__":
-    uvicorn.run("run:app",port=3001, reload=True)
+# if __name__=="__main__":
+#     uvicorn.run("run:app",port=3001, reload=True)
