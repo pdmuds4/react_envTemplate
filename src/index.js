@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './jsx/app';
+import AppPage from './jsx/app';
 
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={ <App /> }/>
+      <Route exact path="/" element={ <AppPage /> }/>
     </Routes>
   );
 }
@@ -14,6 +14,6 @@ function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+    <AppPage />
   </BrowserRouter>
 );

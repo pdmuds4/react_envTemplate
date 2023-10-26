@@ -5,7 +5,7 @@ function Getpost(endpoint){
     const [post, setPost] = React.useState(null);
 
     React.useEffect(() => {
-        axios.get("http://127.0.0.1:3768" + endpoint)
+        axios.get("http://127.0.0.1:3001" + endpoint)
         .then((response) => {
             setPost(response.data);
         })

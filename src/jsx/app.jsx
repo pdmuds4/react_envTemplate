@@ -1,14 +1,14 @@
 import Getpost from "../getpost";
 
-function App() {
-  const post = Getpost("/data");
+function AppPage() {
+  const post = Getpost("/");
   if (!post) return null;
   
   return (
     <div>
-      App1
+      <p>{post.message}</p>
     </div>
   );
 }
 
-export default App;
+export default AppPage;
