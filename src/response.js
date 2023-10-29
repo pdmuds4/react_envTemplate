@@ -25,4 +25,4 @@ const postResponse = async (endpoint, data) => {
 }
 
 
-export {Getresponse, Postresponse};
+export {getResponse, postResponse};
