@@ -27,3 +27,11 @@ $ npm start
 ```
 $ node run.js
 ```
+
+* start docker
+```
+$ docker-compose build
+$ docker-compose up
+```
+
+```
