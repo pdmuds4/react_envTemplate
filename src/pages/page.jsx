@@ -1,4 +1,4 @@
-import {getResponse} from '../response';
+import {getResponse} from '../scripts/response';
 
 
 function Page() {

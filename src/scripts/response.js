@@ -9,7 +9,7 @@ function getResponse(endpoint){
             return response.data;
         })
         .catch(()=>{
-            return null;
+            throw e;
         }
     );
 };
