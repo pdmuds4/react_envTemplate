@@ -6,7 +6,7 @@ COPY /docker/backend/requirements.txt .
 RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 COPY run.py /backend/
-COPY /scripts /backend/
+COPY /scripts /backend/scripts
 
 CMD ["uvicorn", "run:app", "--reload", "--host", "0.0.0.0", "--port", "3001"]
 

@@ -1,13 +1,10 @@
-import {getResponse} from '../scripts/response';
+import {getResponse} from '../response';
 
-
-function Page() {
+export default function Page() {
     const res = getResponse("/");
     return (
         <>
             <p>{res.message}</p>
         </>
     );
-}
-
-export default Page;
+};

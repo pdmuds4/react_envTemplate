@@ -1,6 +1,10 @@
 import axios from "axios";
 
+
 const Domain = "http://127.0.0.1:3001";
+
+// docker用
+//const Domain = "http://0.0.0.0:3001";
 
 // get methodでのレスポンスを返す関数
 function getResponse(endpoint){
@@ -8,7 +12,7 @@ function getResponse(endpoint){
         .then((response) => {
             return response.data;
         })
-        .catch(()=>{
+        .catch((e)=>{
             throw e;
         }
     );
